@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .all-\[unset\] {
+      all: unset;
+    }
+  }
+  
+  
+  
