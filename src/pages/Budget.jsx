@@ -4,6 +4,7 @@ import { updateBudget } from '../redux/BudgetSlice';
 import Nav from '../components/Nav';
 import BudgetWidget from '../components/BudgetWidget';
 import { Footer } from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 export const Budget = ({}) => {
     const [newBudget, setNewBudget] = useState();
@@ -49,7 +50,9 @@ export const Budget = ({}) => {
                              />
                         </div>
                         <div className="px-[41.20px] py-[17.96px] bg-lime-300 rounded-[52.82px] justify-center items-center gap-[10.56px] inline-flex">
-                            <a href="/product_results"><button onClick={handleContinue} className="text-green-800 text-sm font-semibold font-['Inter']">Continue</button></a>
+                            <Link to="/product_results">
+                                <button onClick={handleContinue} className="text-green-800 text-sm font-semibold font-['Inter']">Continue</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
